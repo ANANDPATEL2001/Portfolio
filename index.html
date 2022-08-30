@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navBar">
+        <h1>ANAND KUMAR PATEL Portfolio</h1>
+        <div class="navigationMenu">
+          <a href="#aboutMe">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's connect</a>
+        </div>
+      </nav>
+      <section class="heroSection">
+        <img
+          class="profileImage"
+          src="./Profile images.jpg"
+          alt="Loading your Image"
+        />
+        <div class="herosectionDetails">
+          <h1>ANAND KUMAR PATEL</h1>
+          <h3>Web Developer</h3>
+        </div>
+      </section>
+      <section class="aboutMe" id="aboutMe">
+        <h1>What I do...</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Perspiciatis, in explicabo. Blanditiis, rem quasi! Cum ipsum,
+          aspernatur, impedit voluptas officiis facilis corporis voluptatibus
+          alias eos perferendis, doloremque eius harum. Tenetur tempore cum
+          doloremque at deserunt dignissimos quasi dolores doloribus officia
+          corrupti, est eius, sequi harum esse temporibus eveniet nemo dicta.
+        </p>
+      </section>
+      <section class="skillsAndProjects">
+        <div class="skills" id="skills">
+          <h1 class="cardHeading">Skills</h1>
+          <img src="./Images/html.svg" alt="Loading your Image" title="HTML" />
+          <img src="./Images/CSS.svg" alt="Loading your Image" title="CSS" />
+          <img
+            src="./Images/node.svg"
+            alt="Loading your Image"
+            title="Node.JS"
+          />
+          <img src="./Images/C.svg" alt="Loading your Image" title="C" />
+          <img
+            src="./Images/mongo.svg"
+            alt="Loading your Image"
+            title="MongoDB"
+          />
+          <img src="./Images/C++.svg" alt="Loading your Image" title="C++" />
+          <img
+            src="./Images/ML.svg"
+            alt="Loading your Image"
+            title="machineLearning"
+          />
+          <img
+            src="./Images/JS.svg"
+            alt="Loading your Image"
+            title="javascript"
+          />
+        </div>
+        <div class="projects" id="projects">
+          <h1 class="cardHeading">Projects</h1>
+          <div class="projectContainer">
+            <img src="./Images/proj.svg" alt="" />
+            <div class="projectDescription">
+              <h4>Project Name</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                magnam.
+              </p>
+            </div>
+          </div>
+          <div class="projectContainer">
+            <img src="./Images/proj.svg" alt="" />
+            <div class="projectDescription">
+              <h4>Project Name</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                magnam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactForm" id="contactForm">
+        <h1>Let's Conect</h1>
+        <div class="formGroup">
+          <label for="name">Enter Full Name</label><br />
+          <input type="text" id="name" placeholder="Full Name'/" />
+        </div>
+        <div class="formGroup">
+          <label for="email">Email</label><br />
+          <input type="text" id="email" placeholder="Email'/" />
+        </div>
+        <div class="formGroup">
+          <label for="meassage">Message</label><br />
+          <textarea
+            type="text"
+            id="message"
+            placeholder="Send some Meassage'/"
+            rows="5"
+            cols="150"
+          ></textarea>
+        </div>
+        <a href="https://www.linkedin.com/in/anand-kumar-patel-6a8311229?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSqU4gXUqQkifI1GjTNlFMg%3D%3D"><button class="submitButton" onClick="{submit()}">Connect</button></a>
+      </section>
+    </main>
+  </body>
+</html>
