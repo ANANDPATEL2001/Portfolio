@@ -1,119 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio Project</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="main">
-      <nav class="navBar">
-        <h1>ANAND KUMAR PATEL Portfolio</h1>
-        <div class="navigationMenu">
-          <a href="#aboutMe">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contactForm">Let's connect</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio Project</title>
+
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <main class="main">
+    <nav class="navbar navbar-expand-lg bg-transparent fs-6 w-100">
+      <div class="container-fluid">
+
+        <a href="#" class="navbar-brand fw-bold fs-2">My Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#aboutMe" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu bg-transparent">
+                <li><a class="dropdown-item menu-item"
+                    href="https://github.com/ANANDPATEL2001/Virtual_visit_website">Virtual Pilgrimage</a></li>
+                <li><a class="dropdown-item menu-item"
+                    href="https://github.com/ANANDPATEL2001/Real_State_Price_Prediction">Price Prediction</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item menu-item" href="#projects">More...</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Personal Details</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <span class="d-flex search-box">
+              <input class="me-2 header-search-input" type="search" placeholder="Search" aria-label="Search" />
+
+              <div class="btn btn-outline-success search-btn rounded-circle py-2">
+                <svg class="search-btn-icon" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.66542 10.2366L9.19751 8.951L10.4831 10.4831L13.5473 7.91194L14.8328 9.44402L10.2366 13.3007L7.66542 10.2366Z"
+                    fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.2071 4.89344C19.0923 7.77862 19.3131 12.3193 16.8693 15.4578C16.8846 15.4713 16.8996 15.4854 16.9143 15.5L21.1569 19.7427C21.5474 20.1332 21.5474 20.7664 21.1569 21.1569C20.7664 21.5474 20.1332 21.5474 19.7427 21.1569L15.5 16.9143C15.4854 16.8996 15.4713 16.8846 15.4578 16.8693C12.3193 19.3131 7.77862 19.0923 4.89344 16.2071C1.76924 13.083 1.76924 8.01763 4.89344 4.89344C8.01763 1.76924 13.083 1.76924 16.2071 4.89344ZM14.7929 14.7929C17.1361 12.4498 17.1361 8.6508 14.7929 6.30765C12.4498 3.96451 8.6508 3.96451 6.30765 6.30765C3.96451 8.6508 3.96451 12.4498 6.30765 14.7929C8.6508 17.1361 12.4498 17.1361 14.7929 14.7929Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+            </span>
+          </form>
         </div>
-      </nav>
-      <section class="heroSection">
-        <img
-          class="profileImage"
-          src="./Profile images.jpg"
-          alt="Loading your Image"
-        />
-        <div class="herosectionDetails">
-          <h1>ANAND KUMAR PATEL</h1>
-          <h3>Web Developer</h3>
-        </div>
-      </section>
-      <section class="aboutMe" id="aboutMe">
-        <h1>What I do...</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Perspiciatis, in explicabo. Blanditiis, rem quasi! Cum ipsum,
-          aspernatur, impedit voluptas officiis facilis corporis voluptatibus
-          alias eos perferendis, doloremque eius harum. Tenetur tempore cum
-          doloremque at deserunt dignissimos quasi dolores doloribus officia
-          corrupti, est eius, sequi harum esse temporibus eveniet nemo dicta.
-        </p>
-      </section>
-      <section class="skillsAndProjects">
-        <div class="skills" id="skills">
-          <h1 class="cardHeading">Skills</h1>
-          <img src="./Images/html.svg" alt="Loading your Image" title="HTML" />
-          <img src="./Images/CSS.svg" alt="Loading your Image" title="CSS" />
-          <img
-            src="./Images/node.svg"
-            alt="Loading your Image"
-            title="Node.JS"
-          />
-          <img src="./Images/C.svg" alt="Loading your Image" title="C" />
-          <img
-            src="./Images/mongo.svg"
-            alt="Loading your Image"
-            title="MongoDB"
-          />
-          <img src="./Images/C++.svg" alt="Loading your Image" title="C++" />
-          <img
-            src="./Images/ML.svg"
-            alt="Loading your Image"
-            title="machineLearning"
-          />
-          <img
-            src="./Images/JS.svg"
-            alt="Loading your Image"
-            title="javascript"
-          />
-        </div>
-        <div class="projects" id="projects">
-          <h1 class="cardHeading">Projects</h1>
-          <div class="projectContainer">
-            <img src="./Images/proj.svg" alt="" />
-            <div class="projectDescription">
-              <h4>Project Name</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                magnam.
-              </p>
+      </div>
+    </nav>
+
+    <section class="heroSection">
+      <img class="profileImage" src="./Images/1658658440693.jpg" alt="Loading your Image" />
+      <div class="herosectionDetails">
+        <h1 class="fw-bold">ANAND KUMAR PATEL</h1>
+        <h3>Web Developer</h3>
+      </div>
+    </section>
+
+    <section class="aboutMe" id="aboutMe">
+      <h1>What I do...</h1>
+      <p>Aspiring Software Developer and a Competitive Programmer.
+        Passionate for Dynamic programming and Information technology.
+        Exploring my passion with various Development skills. Learning various computer fundamentals interpersonal
+        skills like management, teamwork and communication.
+        C++ enthusiast for Data Structure & Algorithms.
+        Open to learning new things and getting involved with new projects that can help me apply all that I have
+        learned throughout my past Experiences.
+      </p>
+    </section>
+
+    <section class="skillsAndProjects">
+      <div class="container-fluid skills" id="skills">
+        <h1 class="cardHeading">Skills</h1>
+        <img src="/Images/html.svg" alt="Loading your Image" title="HTML" />
+        <img src="/Images/CSS.svg" alt="Loading your Image" title="CSS" />
+        <img src="/Images/node.svg" alt="Loading your Image" title="Node.JS" />
+        <img src="/Images/google-firebase-icon.svg" alt="Loading your Image" title="Firebase" />
+        <img src="/Images/mongo.svg" alt="Loading your Image" title="MongoDB" />
+        <img src="/Images/C++.svg" alt="Loading your Image" title="C++" />
+        <img src="/Images/ML.svg" alt="Loading your Image" title="machineLearning" />
+        <img src="/Images/JS.svg" alt="Loading your Image" title="javascript" />
+        <img src="/Images/react-js-icon.svg" alt="Loading your Image" title="ReactJS" />
+      </div>
+
+      <div class="container-fluid projects py-5" id="projects">
+        <h1 class="cardHeading">Projects</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-container">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2slMjByZWNvcmQlMjBtYW5hZ2VtZW50fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                class="d-block w-100 img-fluid carousel-img" alt="...">
+              <div class="projectContainer">
+                <img src="/Images/proj.svg" alt="" />
+                <div class="projectDescription">
+                  <span>
+                    <a class="text-decoration-none text-bg-info"
+                      href="https://github.com/ANANDPATEL2001/Book-Record-Management">
+                      <h4>Book Record Management</h4>
+                    </a>
+                    <h5>(12/2022 - 01/2023)</h5>
+                  </span>
+                  <ul>
+                    <li>This Project is used to strore, mange & access Books/Users records from Data Base.</li>
+                    <li>Developed to aid the management of Electronic records.</li>
+                    <li>Readily accessible information for business requirements.</li>
+                    <li>Managed data efficiently using Express & MongoDB.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://cinemawrap.com/wp-content/uploads/2023/07/bookmyshow.jpg"
+                class="d-block w-100 img-fluid carousel-img" alt="...">
+              <div class="projectContainer">
+                <img src="/Images/proj.svg" alt="" />
+                <div class="projectDescription">
+                  <span>
+                    <a class="text-decoration-none text-bg-info" href="https://github.com/ANANDPATEL2001/Book_My_Show">
+                      <h4>Book My Show Clone</h4>
+                    </a>
+                    <h5>(01/2023 - 01/2023)</h5>
+                  </span>
+                  <ul>
+                    <li>Designed as an online ticket booking system.</li>
+                    <li>SignUp & Sign in for Movie Suggestions & Recommendations.</li>
+                    <li>Readily accessible information for business requirements.</li>
+                    <li>Created responsive UI using ReactJS & TailwindCSS.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1664427650948-edaa97ea4dd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGluZHUlMjBoZXJpdGFnZSUyMHBsYWNlc3xlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                class="d-block w-100 img-fluid carousel-img" alt="...">
+              <div class="projectContainer">
+                <img src="/Images/proj.svg" alt="" />
+                <div class="projectDescription">
+                  <span>
+                    <a class="text-decoration-none text-bg-info"
+                      href="https://github.com/ANANDPATEL2001/Virtual_visit_website">
+                      <h4>Virtual Pilgrimage Visit</h4>
+                    </a>
+                    <h5>(08/2022 - 08/2022)</h5>
+                  </span>
+                  <ul>
+                    <li>Designed to access Pilgrimage sites all over the India virtually.</li>
+                    <li>Developed user interfaces with modern JavaScript frameworks, HTML5, and CSS3 which improved user
+                      satisfaction by 30%.</li>
+                    <li>Created responsive UI using ReactJS & Bootstrap.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://media.istockphoto.com/id/1146417905/photo/young-femal-e-engineer-concept-gui.webp?b=1&s=170667a&w=0&k=20&c=ay7Zn1qA_g8jkhBw5XMkZTzqqTbWhC_pGJ7OuZx3U34="
+                class="d-block w-100 img-fluid carousel-img" alt="...">
+              <div class="projectContainer">
+                <img src="/Images/proj.svg" alt="" />
+                <div class="projectDescription">
+                  <span>
+                    <a class="text-decoration-none text-bg-info"
+                      href="https://github.com/ANANDPATEL2001/Real_State_Price_Prediction">
+                      <h4>Real_State_Price_Prediction</h4>
+                    </a>
+                    <h5>(07/2022 - 07/2022)</h5>
+                  </span>
+                  <ul>
+                    <li>Real_State_Price_Prediction project is based on Machine Learning.</li>
+                    <li>It predicts the price of a real state based on various affecting features like area, furnishing
+                      status etc. .</li>
+                    <li> Project is build on boston-data set which comes pre-included with pandas library.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="projectContainer">
-            <img src="./Images/proj.svg" alt="" />
-            <div class="projectDescription">
-              <h4>Project Name</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-                magnam.
-              </p>
-            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- <div class="projectContainer">
+          <img src="/Images/proj.svg" alt="" />
+          <div class="projectDescription">
+            <h4>Project Name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              magnam.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="contactForm" id="contactForm">
-        <h1>Let's Conect</h1>
-        <div class="formGroup">
+        <div class="projectContainer">
+          <img src="/Images/proj.svg" alt="" />
+          <div class="projectDescription">
+            <h4>Project Name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+              magnam.
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="contactForm" id="contactForm">
+      <h1>Let's Conect</h1>
+
+      <form action="#" class="gap-3">
+        <div class="formGroup my-3">
           <label for="name">Enter Full Name</label><br />
-          <input type="text" id="name" placeholder="Full Name'/" />
+          <input class="form-input" type="text" id="name" placeholder="Full Name'/" />
         </div>
-        <div class="formGroup">
+        <div class="formGroup my-3">
           <label for="email">Email</label><br />
-          <input type="text" id="email" placeholder="Email'/" />
+          <input class="form-input" type="text" id="email" placeholder="Email'/" />
         </div>
-        <div class="formGroup">
+        <div class="formGroup my-3">
           <label for="meassage">Message</label><br />
-          <textarea
-            type="text"
-            id="message"
-            placeholder="Send some Meassage'/"
-            rows="5"
-            cols="150"
-          ></textarea>
+          <textarea class="form-input" type="text" id="message" placeholder="Send some Meassage'/" rows="5"
+            cols="150"></textarea>
         </div>
-        <a href="https://www.linkedin.com/in/anand-kumar-patel-6a8311229?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSqU4gXUqQkifI1GjTNlFMg%3D%3D"><button class="submitButton" onClick="{submit()}">Connect</button></a>
-      </section>
-    </main>
-  </body>
+        <button class="submitButton btn btn-outline-primary my-2" type="submit">Connect</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

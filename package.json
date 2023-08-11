@@ -19,5 +19,9 @@
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
     "serve": "^11.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "react-bootstrap": "^2.8.0"
   }
 }
